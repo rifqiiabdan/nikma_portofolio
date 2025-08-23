@@ -29,7 +29,7 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p className="text-lg">
-                Hai! Saya Anya, mahasiswa semester 6 jurusan Desain Komunikasi Visual 
+                Hai! Saya Nikmatul Rizqi, mahasiswa semester 6 jurusan Desain Komunikasi Visual 
                 yang fokus pada video production dan animation. Saya memiliki passion 
                 yang besar dalam bercerita melalui medium visual bergerak.
               </p>

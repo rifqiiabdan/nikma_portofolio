@@ -9,11 +9,7 @@ const Hero = () => {
             <div className="w-32 h-32 mx-auto mb-6 relative">
               <div className="w-full h-full rounded-full bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 p-1 animate-pulse">
                 <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                  <img
-                    src="src/components/images/profile.png"
-                    alt="Profile"
-                    className="w-28 h-28 rounded-full object-cover"
-                  />
+                  <img src="images/profile.png" alt="Profile" className="w-28 h-28 rounded-full object-cover" />
                 </div>
               </div>
             </div>
