@@ -95,11 +95,11 @@ const Portfolio = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#671B91] to-[#4B0082] bg-clip-text text-transparent">
               Video Portfolio
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-2xl mx-auto">
             Koleksi karya video shoot dan animasi yang telah saya buat selama perjalanan kreatif
           </p>
         </div>
@@ -111,7 +111,7 @@ const Portfolio = () => {
               onClick={() => setActiveFilter(category.id)}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 activeFilter === category.id
-                  ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg"
+                  ? "bg-gradient-to-r from-[#671B91] to-[#4B0082] text-white shadow-lg"
                   : "bg-white/50 text-gray-700 hover:bg-white/70"
               }`}
             >
@@ -124,7 +124,7 @@ const Portfolio = () => {
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="group relative overflow-hidden rounded-2xl bg-white/30 backdrop-blur-sm border border-white/20 hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl"
+              className="group relative overflow-hidden rounded-2xl bg-white/80 backdrop-blur-sm border border-white/40 hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl"
             >
               <div className="aspect-video overflow-hidden relative">
                 <img
@@ -135,7 +135,7 @@ const Portfolio = () => {
                 {/* Play button overlay */}
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <Play className="w-8 h-8 text-purple-600 ml-1" />
+                    <Play className="w-8 h-8 text-blue-600 ml-1" />
                   </div>
                 </div>
                 {/* Duration badge */}
@@ -143,7 +143,7 @@ const Portfolio = () => {
                   {item.duration}
                 </div>
                 {/* Type badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-[#671B91] to-[#4B0082] text-white px-3 py-1 rounded-full text-xs font-medium">
                   {item.type}
                 </div>
               </div>
@@ -152,7 +152,7 @@ const Portfolio = () => {
                 <h3 className="text-xl font-bold mb-2 text-gray-800">{item.title}</h3>
                 <p className="text-sm text-gray-600 mb-4">{item.description}</p>
                 <div className="flex items-center justify-between">
-                  <button className="flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium">
+                  <button className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
                     <Eye className="w-4 h-4" />
                     Watch Now
                   </button>

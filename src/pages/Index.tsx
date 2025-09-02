@@ -6,7 +6,7 @@ import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-100">
+    <div className="min-h-screen bg-white bg-gradient-to-br from-[#671B91]/10 via-[#38007D]/20 to-[#280068]/30">
       <Header />
       <Hero />
       <Portfolio />

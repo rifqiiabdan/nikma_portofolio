@@ -23,7 +23,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+                              <span className="bg-gradient-to-r from-[#671B91] to-[#4B0082] bg-clip-text text-transparent">
                 About Me
               </span>
             </h2>
@@ -47,7 +47,7 @@ const About = () => {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
               <h3 className="text-2xl font-bold mb-6 text-gray-800">Software Skills</h3>
               <div className="space-y-6">
                 {skills.map((skill, index) => (
@@ -58,7 +58,7 @@ const About = () => {
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div
-                        className="bg-gradient-to-r from-pink-400 to-purple-500 h-2 rounded-full transition-all duration-1000 ease-out"
+                        className="bg-gradient-to-r from-[#671B91] to-[#4B0082] h-2 rounded-full transition-all duration-1000 ease-out"
                         style={{ width: `${skill.level}%` }}
                       ></div>
                     </div>
@@ -67,14 +67,14 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
               <h3 className="text-2xl font-bold mb-6 text-gray-800">Equipment</h3>
               <div className="grid grid-cols-2 gap-4">
                 {equipment.map((item, index) => {
                   const IconComponent = item.icon;
                   return (
                     <div key={index} className="flex items-center space-x-3 p-3 bg-white/40 rounded-xl">
-                      <IconComponent className="w-6 h-6 text-purple-600" />
+                      <IconComponent className="w-6 h-6 text-[#671B91]" />
                       <span className="text-sm font-medium text-gray-700">{item.name}</span>
                     </div>
                   );
@@ -83,14 +83,14 @@ const About = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white/30 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
-                <div className="text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 text-center border border-white/40">
+                <div className="text-3xl font-bold bg-gradient-to-r from-[#671B91] to-[#4B0082] bg-clip-text text-transparent">
                   25+
                 </div>
                 <div className="text-gray-600 mt-1">Video Projects</div>
               </div>
-              <div className="bg-white/30 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
-                <div className="text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 text-center border border-white/40">
+                <div className="text-3xl font-bold bg-gradient-to-r from-[#671B91] to-[#4B0082] bg-clip-text text-transparent">
                   2
                 </div>
                 <div className="text-gray-600 mt-1">Film Awards</div>

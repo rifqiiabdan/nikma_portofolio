@@ -12,14 +12,14 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/30 border-b border-white/20">
+    <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/80 border-b border-white/30">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-r from-[#671B91] to-[#4B0082] rounded-full flex items-center justify-center">
               <Video className="w-4 h-4 text-white" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-[#671B91] to-[#4B0082] bg-clip-text text-transparent">
               Portofolio Nikmatul Rizqi
             </span>
           </div>
@@ -29,10 +29,10 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium relative group"
+                className="text-gray-700 hover:text-[#671B91] transition-colors duration-300 font-medium relative group"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#671B91] to-[#4B0082] transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </div>
@@ -62,7 +62,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-gray-700 hover:text-purple-600 transition-colors duration-300"
+                className="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
